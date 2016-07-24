@@ -14,14 +14,14 @@ class Main extends Component {
 
   constructor(props) {
     super();
-  }
 
-  this.state = {
-    query: '',
-    hasResults: false,
-    searchResults: [],
-    isLoading: false
-  };
+    this.state = {
+      query: '',
+      hasResults: false,
+      searchResults: [],
+      isLoading: false
+    };
+  }
 
   handleTextChange(event) {
     this.setState({
