@@ -1,11 +1,21 @@
 import React, {Component} from 'react';
-import { PlayButton, Progress, Timer } from 'react-soundplayer/components';
+import { PlayButton, Progress, Timer, Icons } from 'react-soundplayer/components';
+
 
 export default class Track extends Component {
 
   render() {
     const { track, soundCloudAudio, playing, seeking, currentTime, duration } = this.props;
+    const {
+        SoundCloudLogoSVG,
+        PlayIconSVG,
+        PauseIconSVG,
+        NextIconSVG,
+        PrevIconSVG 
+    } = Icons;
     const currentProgress = this.props.currentTime / this.props.duration * 100 || 0;
+
+    console.log('Icons:', Icons);
 
     return (
       <div className="player">

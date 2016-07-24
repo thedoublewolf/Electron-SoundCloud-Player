@@ -28079,8 +28079,15 @@ var Track = function (_Component) {
       var seeking = _props.seeking;
       var currentTime = _props.currentTime;
       var duration = _props.duration;
+      var SoundCloudLogoSVG = _components.Icons.SoundCloudLogoSVG;
+      var PlayIconSVG = _components.Icons.PlayIconSVG;
+      var PauseIconSVG = _components.Icons.PauseIconSVG;
+      var NextIconSVG = _components.Icons.NextIconSVG;
+      var PrevIconSVG = _components.Icons.PrevIconSVG;
 
       var currentProgress = this.props.currentTime / this.props.duration * 100 || 0;
+
+      console.log('Icons:', _components.Icons);
 
       return _react2.default.createElement(
         'div',
